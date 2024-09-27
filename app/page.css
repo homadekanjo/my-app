@@ -1,0 +1,30 @@
+*,::before,::after{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: .2s linear;
+}
+html{
+  --bg : #000;
+  --font : #fff;
+}
+body{
+  background: var(--bg);
+  color: var(--font);
+  /* height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem; */
+}
+button{
+  outline: none;
+  padding: 3px 6px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  &:hover{
+    background: var(--font);
+    color: var(--bg);
+  }
+}
